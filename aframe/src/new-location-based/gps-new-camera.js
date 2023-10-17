@@ -182,9 +182,9 @@ AFRAME.registerComponent("gps-new-camera", {
         false
       );
 
-      this.el.sceneEl.systems["arjs"]._displayErrorPopup(
-        "After camera permission prompt, please tap the screen to activate geolocation."
-      );
+      // this.el.sceneEl.systems["arjs"]._displayErrorPopup(
+      //   "After camera permission prompt, please tap the screen to activate geolocation."
+      // );
     } else {
       var timeout = setTimeout(() => {
         this.el.sceneEl.systems["arjs"]._displayErrorPopup(
